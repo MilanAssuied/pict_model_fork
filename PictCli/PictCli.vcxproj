@@ -118,10 +118,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Dummy.h" />
+    <ClCompile Include="EntityWrapper.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Dummy.cpp" />
+    <ClInclude Include="EntityWrapper.h" />
+    <ClInclude Include="ManagedObject.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

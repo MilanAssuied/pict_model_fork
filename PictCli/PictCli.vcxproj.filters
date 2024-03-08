@@ -13,15 +13,30 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\CLI">
+      <UniqueIdentifier>{1ba74eba-acaf-490b-9a54-df0af841c0f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wrappers">
+      <UniqueIdentifier>{af391eea-5959-4734-8725-3b5158fd67f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wrappers">
+      <UniqueIdentifier>{ba7965d0-ef18-4b4f-b640-3370fdba86c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CLI">
+      <UniqueIdentifier>{65e491a5-d372-49a0-952b-4e12af307cc1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Dummy.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Dummy.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="EntityWrapper.cpp">
+      <Filter>Source Files\CLI</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ManagedObject.h">
+      <Filter>Header Files\CLI</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityWrapper.h">
+      <Filter>Header Files\Wrappers</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
