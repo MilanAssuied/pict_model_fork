@@ -112,6 +112,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PictCore\PictCore.vcxproj">
+      <Project>{c39afd12-a08b-45a4-a65f-f394f51d66c2}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Dummy.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Dummy.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
