@@ -73,21 +73,21 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
-    <IncludePath>$(ProjectDir);$(ProjectDir)headers;$(ProjectDir)api;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)headers;$(ProjectDir)api;$(IncludePath)</IncludePath>
     <SourcePath>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)api;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
-    <IncludePath>$(ProjectDir);$(ProjectDir)headers;$(ProjectDir)api;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)headers;$(ProjectDir)api;$(IncludePath)</IncludePath>
     <SourcePath>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)api;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(ProjectDir);$(ProjectDir)headers;$(ProjectDir)api;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)headers;$(ProjectDir)api;$(IncludePath)</IncludePath>
     <SourcePath>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)api;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(ProjectDir);$(ProjectDir)headers;$(ProjectDir)api;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)headers;$(ProjectDir)api;$(IncludePath)</IncludePath>
     <SourcePath>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)api;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -172,8 +172,8 @@
     <ClInclude Include="api\pictapi.h" />
     <ClInclude Include="api\resource.h" />
     <ClInclude Include="api\trie.h" />
+    <ClInclude Include="headers\core_api.h" />
     <ClInclude Include="headers\Entity.h" />
-    <ClInclude Include="core_api.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="api\combination.cpp" />

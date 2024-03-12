@@ -1,8 +1,7 @@
 #pragma once
 
 #include "ManagedObject.h"
-
-#include "..\PictCore\core_api.h"
+#include "core_api.h"
 
 using namespace System;
 
