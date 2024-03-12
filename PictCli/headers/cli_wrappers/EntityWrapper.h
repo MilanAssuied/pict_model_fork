@@ -2,7 +2,7 @@
 
 #include "ManagedObject.h"
 
-#include "../../../PictCore/pch.h"
+#include "..\PictCore\core_api.h"
 
 using namespace System;
 
