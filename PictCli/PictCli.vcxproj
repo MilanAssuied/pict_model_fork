@@ -138,11 +138,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\cli_wrappers\EntityWrapper.cpp" />
+    <ClCompile Include="src\cli_wrappers\PictCreateTaskWrapper.cpp" />
     <ClCompile Include="src\converters\StringConverters.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="headers\cli_wrappers\EntityWrapper.h" />
     <ClInclude Include="headers\cli_wrappers\generics\ManagedObject.h" />
+    <ClInclude Include="headers\cli_wrappers\PictCreateTaskWrapper.h" />
     <ClInclude Include="headers\converters\StringConverters.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
