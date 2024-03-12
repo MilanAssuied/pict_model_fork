@@ -9,7 +9,8 @@ public class PictApi : IPictApi
     {
         unsafe
         {
-            return new IntPtr(pict_create_task_wrapper.pict_create_task());
+            var wrapper = new pict_create_task_wrapper();
+            return new IntPtr(wrapper.pict_create_task());
         }
     }
 }

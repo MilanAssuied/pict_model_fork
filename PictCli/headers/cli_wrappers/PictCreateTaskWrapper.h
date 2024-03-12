@@ -7,7 +7,15 @@ namespace cli_wrapper
 {    
     public ref class pict_create_task_wrapper sealed
     {
+    private:
+        PICT_HANDLE m_instance_ = nullptr;
+
+        void on_delete();
+        
     public:
-        static PICT_HANDLE pict_create_task();
+        virtual ~pict_create_task_wrapper();
+        !pict_create_task_wrapper();
+        
+        PICT_HANDLE pict_create_task();
     };    
 }
