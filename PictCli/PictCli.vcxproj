@@ -78,22 +78,22 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
-    <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
-    <SourcePath>$(ProjectDir);$(SourcePath)</SourcePath>
+    <IncludePath>$(ProjectDir)..\PictCore\headers;$(ProjectDir);$(ProjectDir)headers;$(ProjectDir)headers\cli_wrappers;$(ProjectDir)headers\cli_wrappers\generics;$(ProjectDir)headers\converters;$(IncludePath)</IncludePath>
+    <SourcePath>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)src\cli_wrappers;$(ProjectDir)src\converters;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
-    <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
-    <SourcePath>$(ProjectDir);$(SourcePath)</SourcePath>
+    <IncludePath>$(ProjectDir)..\PictCore\headers;$(ProjectDir);$(ProjectDir)headers;$(ProjectDir)headers\cli_wrappers;$(ProjectDir)headers\cli_wrappers\generics;$(ProjectDir)headers\converters;$(IncludePath)</IncludePath>
+    <SourcePath>$(ProjectDir);$(ProjectDir)src$;$(ProjectDir)src\cli_wrappers;$(ProjectDir)src\converters;(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
-    <SourcePath>$(ProjectDir);$(SourcePath)</SourcePath>
+    <IncludePath>$(ProjectDir)..\PictCore\headers;$(ProjectDir);$(ProjectDir)headers;$(ProjectDir)headers\cli_wrappers;$(ProjectDir)headers\cli_wrappers\generics;$(ProjectDir)headers\converters;$(IncludePath)</IncludePath>
+    <SourcePath>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)src\cli_wrappers;$(ProjectDir)src\converters;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
-    <SourcePath>$(ProjectDir);$(SourcePath)</SourcePath>
+    <IncludePath>$(ProjectDir)..\PictCore\headers;$(ProjectDir);$(ProjectDir)headers;$(ProjectDir)headers\cli_wrappers;$(ProjectDir)headers\cli_wrappers\generics;$(ProjectDir)headers\converters;$(IncludePath)</IncludePath>
+    <SourcePath>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)src\cli_wrappers;$(ProjectDir)src\converters;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -137,11 +137,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="EntityWrapper.cpp" />
+    <ClCompile Include="src\cli_wrappers\EntityWrapper.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="EntityWrapper.h" />
-    <ClInclude Include="ManagedObject.h" />
+    <ClInclude Include="headers\cli_wrappers\EntityWrapper.h" />
+    <ClInclude Include="headers\cli_wrappers\generics\ManagedObject.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
