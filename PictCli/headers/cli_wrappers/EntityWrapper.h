@@ -1,25 +1,27 @@
 #pragma once
 
 #include "ManagedObject.h"
-#include "..\PictCore\pch.h"
+
+#include "../../../PictCore/pch.h"
 
 using namespace System;
-namespace CLI
+
+namespace cli_wrapper
 {
-    public ref class EntityWrapper : public ManagedObject<Core::Entity>
+    public ref class entity_wrapper sealed : public managed_object<core::entity>
     {
     public:
 
-        EntityWrapper(String^ name, float xPos, float yPos);
+        entity_wrapper(String^ name, float x_pos, float y_pos);
 
-        void Move(float deltaX, float deltaY);
+        void move(float delta_x, float delta_y);
 
         property float XPosition
         {
         public:
             float get()
             {
-                return m_Instance->GetXPosition();
+                return m_instance_->get_x_position();
             }
         private:
             void set(float value)
@@ -32,7 +34,7 @@ namespace CLI
         public:
             float get()
             {
-                return m_Instance->GetYPosition();
+                return m_instance_->get_y_position();
             }
         private:
             void set(float value)

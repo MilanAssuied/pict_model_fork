@@ -1,15 +1,14 @@
-﻿using CLI;
+﻿using cli_wrapper;
 
 namespace Sandbox
 {
-    class Program
+    static class Program
     {
         static void Main(string[] args)
         {
-            EntityWrapper e = new EntityWrapper("The Wallman", 20, 35);
-            e.Move(5, -10);
+            var e = new entity_wrapper("The Wall-man", 20, 35);
+            e.move(5, -10);
             Console.WriteLine(e.XPosition + " " + e.YPosition);
-            Console.Read();
         }
     }
 }

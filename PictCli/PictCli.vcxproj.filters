@@ -13,30 +13,36 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Header Files\Wrappers">
-      <UniqueIdentifier>{af391eea-5959-4734-8725-3b5158fd67f9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Wrappers">
-      <UniqueIdentifier>{ba7965d0-ef18-4b4f-b640-3370fdba86c1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Cli">
+    <Filter Include="Header Files\cli_wrappers">
       <UniqueIdentifier>{1ba74eba-acaf-490b-9a54-df0af841c0f8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Cli">
+    <Filter Include="Source Files\cli_wrappers">
       <UniqueIdentifier>{df13bb46-b6af-43e0-9b06-56b1475e5533}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\converters">
+      <UniqueIdentifier>{fc476233-4672-428e-9bd0-b27299918a7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\converters">
+      <UniqueIdentifier>{bef5480e-c1c9-4a94-964c-2c9d9b65b2a4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="headers\cli_wrappers\generics\ManagedObject.h">
+      <Filter>Header Files\cli_wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\cli_wrappers\EntityWrapper.h">
+      <Filter>Header Files\cli_wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\converters\StringConverters.h">
+      <Filter>Header Files\converters</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\cli_wrappers\EntityWrapper.cpp">
-      <Filter>Source Files\Wrappers</Filter>
+      <Filter>Source Files\cli_wrappers</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="headers\cli_wrappers\EntityWrapper.h">
-      <Filter>Header Files\Wrappers</Filter>
-    </ClInclude>
-    <ClInclude Include="headers\cli_wrappers\generics\ManagedObject.h">
-      <Filter>Header Files\Cli</Filter>
-    </ClInclude>
+    <ClCompile Include="src\converters\StringConverters.cpp">
+      <Filter>Source Files\converters</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

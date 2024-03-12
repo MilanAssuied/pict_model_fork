@@ -1,54 +1,43 @@
 #pragma once
+#include <msclr/marshal_cppstd.h>
 
-using namespace System;
-using namespace System::Runtime::InteropServices;
-
-namespace CLI {
+namespace cli_wrapper {
 
     template<class T>
-    public ref class ManagedObject
+    public ref class managed_object
     {
     private:
 
-        void FreeMembers() 
+        void free_members() 
         {
-            if (m_Instance != nullptr)
+            if (m_instance_ != nullptr)
             {
-                delete m_Instance;
+                delete m_instance_;
             }
         
         }
 
     protected:
-        T* m_Instance;
+        T* m_instance_;
 
     public:
-        ManagedObject(T* instance): m_Instance(instance)
+        managed_object(T* instance): m_instance_(instance)
         {
         }
 
-        virtual ~ManagedObject()
+        virtual ~managed_object()
         {
-            FreeMembers();
+            free_members();
         }
 
-        !ManagedObject()
+        !managed_object()
         {
-            FreeMembers();
+            free_members();
         }
 
-        T* GetInstance()
+        T* get_instance()
         {
-            return m_Instance;
-        }
-
-        static const char* string_to_char_array(String^ string)
-        {
-            IntPtr strPtr = Marshal::StringToHGlobalAnsi(string);
-            const char* str = static_cast<const char*>(strPtr.ToPointer());
-            //Marshal::FreeHGlobal(strPtr);
-            return str;
+            return m_instance_;
         }
     };
-
 }
