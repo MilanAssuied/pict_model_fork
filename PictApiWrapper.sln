@@ -7,7 +7,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PictCore", "PictCore\PictCo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PictCli", "PictCli\PictCli.vcxproj", "{BA8A662B-CC70-4FFA-AF64-D5DE11D74690}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PictApi", "PictApi\PictApi.csproj", "{2484507F-3689-4212-9706-640D7171CC4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PictApi", "PictApi\PictApi.csproj", "{2484507F-3689-4212-9706-640D7171CC4E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
