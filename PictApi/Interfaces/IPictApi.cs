@@ -7,4 +7,6 @@ public interface IPictApi
     IntPtr CreateModel(uint seed);
     
     void SetModel(IntPtr task, IntPtr model);
+
+    uint Generate(IntPtr task);
 }

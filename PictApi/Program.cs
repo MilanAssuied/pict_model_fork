@@ -15,6 +15,9 @@ namespace Sandbox
             CheckNull(model);
             
             pictApi.SetModel(task, model);
+            
+            var returnCode = pictApi.Generate(task);
+            Console.WriteLine($"Return code has value: {returnCode}");
         }
         
         static void CheckNull(IntPtr ptr)

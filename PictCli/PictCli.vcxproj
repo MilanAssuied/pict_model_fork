@@ -142,7 +142,11 @@
     <ClCompile Include="src\pict_wrappers\PictConstants.cpp" />
     <ClCompile Include="src\pict_wrappers\PictCreateModelWrapper.cpp" />
     <ClCompile Include="src\pict_wrappers\PictCreateTaskWrapper.cpp" />
+    <ClCompile Include="src\pict_wrappers\PictGenerate.cpp" />
+
     <ClCompile Include="src\pict_wrappers\PictSetRootModel.cpp" />
+
+    <ClCompile Include="src\pict_wrappers\PictValidation.cpp" />
 
   </ItemGroup>
   <ItemGroup>
@@ -156,7 +160,9 @@
     <ClInclude Include="headers\pict_wrappers\PictConstants.h" />
     <ClInclude Include="headers\pict_wrappers\PictCreateModelWrapper.h" />
     <ClInclude Include="headers\pict_wrappers\PictCreateTaskWrapper.h" />
+    <ClInclude Include="headers\pict_wrappers\PictGenerate.h" />
     <ClInclude Include="headers\pict_wrappers\PictSetRootModel.h" />
+    <ClInclude Include="headers\pict_wrappers\PictValidation.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

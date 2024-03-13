@@ -30,10 +30,12 @@ public class PictApi : IPictApi
 
     public void SetModel(IntPtr task, IntPtr model)
     {
-        unsafe
-        {
-            var wrapper = new pict_set_root_model_wrapper();
-            wrapper.call(task, model);
-        }
+        var wrapper = new pict_set_root_model_wrapper();
+        wrapper.call(task, model);
+    }
+
+    public uint Generate(IntPtr task)
+    {
+        return pict_generate.call(task);
     }
 }
