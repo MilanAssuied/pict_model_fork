@@ -10,7 +10,7 @@ public class PictApi : IPictApi
         unsafe
         {
             var wrapper = new pict_create_task_wrapper();
-            return new IntPtr(wrapper.pict_create_task());
+            return new IntPtr(wrapper.call());
         }
     }
 }

@@ -1,21 +1,16 @@
 ﻿#pragma once
 
-#include "core_api.h"
+#include "ManagedMethodExpansionForcer.h"
 
 
 namespace cli_wrapper
 {    
-    public ref class pict_create_task_wrapper sealed
+    public ref class pict_create_task_wrapper sealed : public managed_method_expansion_forcer
     {
-    private:
-        PICT_HANDLE m_instance_ = nullptr;
-
-        void on_delete();
-        
     public:
-        virtual ~pict_create_task_wrapper();
-        !pict_create_task_wrapper();
-        
-        PICT_HANDLE pict_create_task();
+        pict_create_task_wrapper();
+
+    private:
+        void force_expansion() { call(); }
     };    
 }
