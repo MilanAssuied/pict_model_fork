@@ -13,6 +13,8 @@ namespace Sandbox
             
             var model = pictApi.CreateModel();
             CheckNull(model);
+            
+            pictApi.SetModel(task, model);
         }
         
         static void CheckNull(IntPtr ptr)

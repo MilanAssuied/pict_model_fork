@@ -142,16 +142,21 @@
     <ClCompile Include="src\pict_wrappers\PictConstants.cpp" />
     <ClCompile Include="src\pict_wrappers\PictCreateModelWrapper.cpp" />
     <ClCompile Include="src\pict_wrappers\PictCreateTaskWrapper.cpp" />
+    <ClCompile Include="src\pict_wrappers\PictSetRootModel.cpp" />
+
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="headers\cli_wrappers\EntityWrapper.h" />
     <ClInclude Include="headers\cli_wrappers\generics\ManagedMethod.h" />
     <ClInclude Include="headers\cli_wrappers\generics\ManagedMethodExpansionForcer.h" />
     <ClInclude Include="headers\cli_wrappers\generics\ManagedObject.h" />
+    <ClInclude Include="headers\cli_wrappers\generics\ManagedVoidMethod.h" />
+    <ClInclude Include="headers\cli_wrappers\generics\ManagedVoidMethodExpansionForcer.h" />
     <ClInclude Include="headers\converters\StringConverters.h" />
     <ClInclude Include="headers\pict_wrappers\PictConstants.h" />
     <ClInclude Include="headers\pict_wrappers\PictCreateModelWrapper.h" />
     <ClInclude Include="headers\pict_wrappers\PictCreateTaskWrapper.h" />
+    <ClInclude Include="headers\pict_wrappers\PictSetRootModel.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

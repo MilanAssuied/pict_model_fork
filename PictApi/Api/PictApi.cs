@@ -22,10 +22,18 @@ public class PictApi : IPictApi
     public IntPtr CreateModel(uint seed)
     {
         unsafe
-        {
-            
+        {   
             var wrapper = new pict_create_model_wrapper();
             return new IntPtr(wrapper.call(seed));
+        }
+    }
+
+    public void SetModel(IntPtr task, IntPtr model)
+    {
+        unsafe
+        {
+            var wrapper = new pict_set_root_model_wrapper();
+            wrapper.call(task, model);
         }
     }
 }
