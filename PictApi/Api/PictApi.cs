@@ -1,4 +1,4 @@
-﻿using cli_wrapper;
+﻿using pict_wrapper;
 using Sandbox.Interfaces;
 
 namespace Sandbox.Api;
