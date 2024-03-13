@@ -1,5 +1,6 @@
 #include "StringConverters.h"
 
+
 namespace converters {
 
 	std::string string_converters::managed_string_to_standard_string(String^ string)

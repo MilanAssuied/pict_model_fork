@@ -1,4 +1,7 @@
 #pragma once
+
+// Causes 0>servprov.h(99,64): Error C3699 : '*': cannot use this indirection on type 'IServiceProvider' if removed
+// ReSharper disable once CppUnusedIncludeDirective
 #include <msclr/marshal_cppstd.h>
 
 namespace cli_wrapper {

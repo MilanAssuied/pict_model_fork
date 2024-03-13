@@ -5,6 +5,7 @@
 
 using namespace System;
 
+
 namespace cli_wrapper
 {
     public ref class entity_wrapper sealed : public managed_object<core::entity>

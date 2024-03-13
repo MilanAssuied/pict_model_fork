@@ -1,6 +1,7 @@
 #include "EntityWrapper.h"
 #include "StringConverters.h"
 
+
 namespace cli_wrapper
 {
     entity_wrapper::entity_wrapper(String^ name, float x_pos, float y_pos) :

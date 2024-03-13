@@ -1,6 +1,7 @@
 ﻿#include "PictConstants.h"
 #include "core_api.h"
 
+
 namespace pict_wrapper
 {
     unsigned int pict_constants::DefaultSeed::get()
