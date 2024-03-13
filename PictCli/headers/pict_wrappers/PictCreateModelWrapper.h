@@ -1,0 +1,13 @@
+﻿#pragma once
+
+#include "ManagedMethodExpansionForcer.h"
+
+
+namespace pict_wrapper
+{    
+    public ref class pict_create_model_wrapper sealed : public cli_wrapper::managed_method_expansion_forcer
+    {
+    public:
+        pict_create_model_wrapper();
+    };    
+}

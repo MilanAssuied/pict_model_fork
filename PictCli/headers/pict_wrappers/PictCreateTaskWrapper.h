@@ -9,8 +9,5 @@ namespace pict_wrapper
     {
     public:
         pict_create_task_wrapper();
-
-    private:
-        void force_expansion() { call(); }
     };    
 }

@@ -139,6 +139,8 @@
   <ItemGroup>
     <ClCompile Include="src\cli_wrappers\EntityWrapper.cpp" />
     <ClCompile Include="src\converters\StringConverters.cpp" />
+    <ClCompile Include="src\pict_wrappers\PictConstants.cpp" />
+    <ClCompile Include="src\pict_wrappers\PictCreateModelWrapper.cpp" />
     <ClCompile Include="src\pict_wrappers\PictCreateTaskWrapper.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -147,6 +149,8 @@
     <ClInclude Include="headers\cli_wrappers\generics\ManagedMethodExpansionForcer.h" />
     <ClInclude Include="headers\cli_wrappers\generics\ManagedObject.h" />
     <ClInclude Include="headers\converters\StringConverters.h" />
+    <ClInclude Include="headers\pict_wrappers\PictConstants.h" />
+    <ClInclude Include="headers\pict_wrappers\PictCreateModelWrapper.h" />
     <ClInclude Include="headers\pict_wrappers\PictCreateTaskWrapper.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

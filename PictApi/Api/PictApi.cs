@@ -13,4 +13,19 @@ public class PictApi : IPictApi
             return new IntPtr(wrapper.call());
         }
     }
+
+    public IntPtr CreateModel()
+    {
+        return CreateModel(pict_constants.DefaultSeed);
+    }
+
+    public IntPtr CreateModel(uint seed)
+    {
+        unsafe
+        {
+            
+            var wrapper = new pict_create_model_wrapper();
+            return new IntPtr(wrapper.call(seed));
+        }
+    }
 }

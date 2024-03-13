@@ -1,5 +1,4 @@
-﻿using cli_wrapper;
-using Sandbox.Api;
+﻿using Sandbox.Api;
 
 namespace Sandbox
 {
@@ -11,6 +10,9 @@ namespace Sandbox
             
             var task = pictApi.CreateTask();
             CheckNull(task);
+            
+            var model = pictApi.CreateModel();
+            CheckNull(model);
         }
         
         static void CheckNull(IntPtr ptr)
