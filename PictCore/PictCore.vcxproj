@@ -173,7 +173,6 @@
     <ClInclude Include="api\resource.h" />
     <ClInclude Include="api\trie.h" />
     <ClInclude Include="headers\core_api.h" />
-    <ClInclude Include="headers\Entity.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="api\combination.cpp" />
@@ -184,7 +183,6 @@
     <ClCompile Include="api\pictapi.cpp" />
     <ClCompile Include="api\task.cpp" />
     <ClCompile Include="api\worklist.cpp" />
-    <ClCompile Include="src\Entity.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="api\CMakeLists.txt" />
