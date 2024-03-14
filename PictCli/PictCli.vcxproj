@@ -137,6 +137,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="headers\converters\PictConvertes.cpp" />
     <ClCompile Include="src\cli_wrappers\EntityWrapper.cpp" />
     <ClCompile Include="src\converters\StringConverters.cpp" />
     <ClCompile Include="src\pict_wrappers\PictConstants.cpp" />
@@ -156,6 +157,7 @@
     <ClInclude Include="headers\cli_wrappers\generics\ManagedObject.h" />
     <ClInclude Include="headers\cli_wrappers\generics\ManagedVoidMethod.h" />
     <ClInclude Include="headers\cli_wrappers\generics\ManagedVoidMethodExpansionForcer.h" />
+    <ClInclude Include="headers\converters\PictConverters.h" />
     <ClInclude Include="headers\converters\StringConverters.h" />
     <ClInclude Include="headers\pict_wrappers\PictConstants.h" />
     <ClInclude Include="headers\pict_wrappers\PictCreateModelWrapper.h" />
