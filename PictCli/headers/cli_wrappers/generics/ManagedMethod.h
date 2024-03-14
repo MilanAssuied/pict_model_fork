@@ -1,8 +1,10 @@
 #pragma once
 
+#include "core_api.h"
+
 
 namespace cli_wrapper {
-
+    
     template<typename TResult>
     public ref class managed_method
     {
@@ -31,4 +33,5 @@ namespace cli_wrapper {
         }
     };
 
+    template managed_method<PICT_HANDLE>; //Forced expansion of concrete type  
 }

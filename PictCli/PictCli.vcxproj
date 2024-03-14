@@ -153,10 +153,8 @@
   <ItemGroup>
     <ClInclude Include="headers\cli_wrappers\EntityWrapper.h" />
     <ClInclude Include="headers\cli_wrappers\generics\ManagedMethod.h" />
-    <ClInclude Include="headers\cli_wrappers\generics\ManagedMethodExpansionForcer.h" />
     <ClInclude Include="headers\cli_wrappers\generics\ManagedObject.h" />
     <ClInclude Include="headers\cli_wrappers\generics\ManagedVoidMethod.h" />
-    <ClInclude Include="headers\cli_wrappers\generics\ManagedVoidMethodExpansionForcer.h" />
     <ClInclude Include="headers\converters\PictConverters.h" />
     <ClInclude Include="headers\converters\StringConverters.h" />
     <ClInclude Include="headers\pict_wrappers\PictConstants.h" />

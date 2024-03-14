@@ -3,7 +3,7 @@
 
 namespace pict_wrapper
 {
-    pict_set_root_model_wrapper::pict_set_root_model_wrapper() : managed_void_method_expansion_forcer(PictSetRootModel)
+    pict_set_root_model_wrapper::pict_set_root_model_wrapper() : managed_void_method(PictSetRootModel)
     {
     }
 }

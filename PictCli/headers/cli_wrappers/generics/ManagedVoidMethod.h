@@ -1,5 +1,6 @@
 #pragma once
 
+#include "core_api.h"
 #include "PictConverters.h"
 
 
@@ -27,4 +28,6 @@ namespace cli_wrapper
             }
         }
     };
+
+    template managed_void_method<PICT_HANDLE, PICT_HANDLE>; //Forced expansion of concrete type   
 }
