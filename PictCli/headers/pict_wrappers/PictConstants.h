@@ -15,5 +15,12 @@ namespace pict_wrapper
                 void set(unsigned int value);
         }
 
+        static property unsigned int PairWiseGeneration
+        {
+            public:
+                unsigned int get();
+            private:
+                void set(unsigned int value);
+        }
     };
 }

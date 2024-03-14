@@ -10,4 +10,11 @@ namespace pict_wrapper
     }
 
     void pict_constants::DefaultSeed::set(unsigned int value) {}
+
+    unsigned int pict_constants::PairWiseGeneration::get()
+    {
+        return PICT_PAIRWISE_GENERATION;
+    }
+
+    void pict_constants::PairWiseGeneration::set(unsigned int value) {}
 }

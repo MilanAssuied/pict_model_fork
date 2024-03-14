@@ -2,11 +2,13 @@
 
 public interface IPictApi
 {
-    IntPtr CreateTask();
+    IntPtr AddParameter(IntPtr model, UIntPtr valueCount, uint[]? valueWeights = default);
+    IntPtr AddParameter(IntPtr model, UIntPtr valueCount, uint order, uint[]? valueWeights = default);
+    
     IntPtr CreateModel();
     IntPtr CreateModel(uint seed);
-    
-    void SetModel(IntPtr task, IntPtr model);
+    IntPtr CreateTask();
 
     uint Generate(IntPtr task);
+    void SetModel(IntPtr task, IntPtr model);
 }

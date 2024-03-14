@@ -14,6 +14,19 @@ public class PictApi : IPictApi
         }
     }
 
+    public IntPtr AddParameter(IntPtr model, UIntPtr valueCount, uint[]? valueWeights = default)
+    {
+        return AddParameter(model, valueCount, pict_constants.PairWiseGeneration, valueWeights);
+    }
+
+    public IntPtr AddParameter(IntPtr model, UIntPtr valueCount, uint order, uint[]? valueWeights = default)
+    {
+        unsafe
+        {
+            return new IntPtr(pict_add_parameter.call(model, valueCount, order, valueWeights));
+        }
+    }
+
     public IntPtr CreateModel()
     {
         return CreateModel(pict_constants.DefaultSeed);
