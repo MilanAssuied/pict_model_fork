@@ -5,15 +5,15 @@
 
 void pict_wrapper::pict_validation::check_ret_code(const PICT_RET_CODE ret_code)
 {
-    switch( ret_code )                                           
-    {                                                     
-        case PICT_SUCCESS:                                    
-            break;                                            
+    switch (ret_code)
+    {
+        case PICT_SUCCESS:
+            break;
         case PICT_OUT_OF_MEMORY:
-            std::wcout << L"Error: Out of memory" << std::endl;         
+            std::wcout << L"Error: Out of memory" << std::endl;
         case PICT_GENERATION_ERROR:
-            std::wcout << L"Error: Internal engine error" << std::endl; 
-        default:                                              
-            assert( ! L"Unexpected error code" );             
+            std::wcout << L"Error: Internal engine error" << std::endl;
+        default:
+            assert(! L"Unexpected error code");
     }
 }

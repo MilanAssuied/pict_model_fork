@@ -1,6 +1,7 @@
 ﻿#include "PictAddParameter.h"
 
 #include "PictConverters.h"
+#include "PictValidation.h"
 
 using namespace converters;
 
@@ -13,12 +14,16 @@ namespace pict_wrapper
         [Optional] array<unsigned int>^ value_weights
     )
     {
-        if (!order.HasValue) { order = PICT_DEFAULT_RANDOM_SEED; }
+        const PICT_HANDLE model_handle = pict_converters::int_ptr_to_pict_handle(model);
+        
+        order = pict_validation::impose_default_value_to_optional_parameter(order, static_cast<unsigned>(PICT_PAIRWISE_GENERATION));
+        unsigned int* native_weights_array = pict_converters::cli_array_to_unsigned_int_array(value_weights);
+        
         return PictAddParameter(
-            pict_converters::int_ptr_to_pict_handle(model),
+            model_handle,
             value_count,
             order.Value,
-            pict_converters::cli_array_to_unsigned_int_array(value_weights)
+            native_weights_array            
         );
     }
 }

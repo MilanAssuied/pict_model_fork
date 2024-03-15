@@ -1,11 +1,13 @@
 ﻿#include "PictCreateModelWrapper.h"
 
+#include "PictValidation.h"
+
 
 namespace pict_wrapper
 {
     PICT_HANDLE pict_create_model_wrapper::call(Nullable<unsigned> seed)
     {
-        if (!seed.HasValue) { seed = PICT_DEFAULT_RANDOM_SEED; }
+        seed = pict_validation::impose_default_value_to_optional_parameter(seed, static_cast<unsigned>(PICT_DEFAULT_RANDOM_SEED));
         return PictCreateModel(seed.Value);
     }
 }
