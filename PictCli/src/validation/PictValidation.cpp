@@ -3,7 +3,7 @@
 #include <cassert>
 #include <iostream>
 
-void pict_wrapper::pict_validation::check_ret_code(const PICT_RET_CODE ret_code)
+void validation::pict_validation::check_ret_code(const PICT_RET_CODE ret_code)
 {
     switch (ret_code)
     {

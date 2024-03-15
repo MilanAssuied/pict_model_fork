@@ -5,4 +5,3 @@
 #include "../api/pictapi.h"
 
 #endif //#define CORE_API
-

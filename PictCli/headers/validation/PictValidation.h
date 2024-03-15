@@ -2,7 +2,7 @@
 
 #include "core_api.h"
 
-namespace pict_wrapper
+namespace validation
 {
     public class pict_validation
     {

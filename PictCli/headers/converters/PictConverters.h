@@ -3,8 +3,8 @@
 #include "core_api.h"
 
 
-namespace converters {
-
+namespace converters
+{
     class pict_converters
     {
     public:
@@ -15,17 +15,16 @@ namespace converters {
     };
 
     template<typename T>
-    T* pict_converters::cli_array_to_unmanaged_array(array<T, 1>^ value)
+    T* pict_converters::cli_array_to_unmanaged_array(array<T>^ value)
     {
-        if(value == nullptr)
+        if (value == nullptr)
         {
             return nullptr;
         }
-    
+
         const pin_ptr<T> pinned_values = &value[0];
         T* native_pointer_to_values = pinned_values;
 
         return native_pointer_to_values;
     }
 }
-

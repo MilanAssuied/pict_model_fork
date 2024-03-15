@@ -78,22 +78,22 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
-    <IncludePath>$(ProjectDir)..\PictCore\headers;$(ProjectDir);$(ProjectDir)headers;$(ProjectDir)headers\cli_wrappers;$(ProjectDir)headers\cli_wrappers\generics;$(ProjectDir)headers\converters;$(ProjectDir)headers\pict_wrappers;$(IncludePath)</IncludePath>
-    <SourcePath>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)src\cli_wrappers;$(ProjectDir)src\converters;$(ProjectDir)src\pict_wrappers;$(SourcePath)</SourcePath>
+    <IncludePath>$(ProjectDir)..\PictCore\headers;$(ProjectDir);$(ProjectDir)headers;$(ProjectDir)headers\converters;$(ProjectDir)headers\pict_wrappers;$(ProjectDir)headers\validation;$(IncludePath)</IncludePath>
+    <SourcePath>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)src\converters;$(ProjectDir)src\pict_wrappers;$(ProjectDir)src\validation;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
-    <IncludePath>$(ProjectDir)..\PictCore\headers;$(ProjectDir);$(ProjectDir)headers;$(ProjectDir)headers\cli_wrappers;$(ProjectDir)headers\cli_wrappers\generics;$(ProjectDir)headers\converters;$(ProjectDir)headers\pict_wrappers;$(IncludePath)</IncludePath>
-    <SourcePath>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)src\cli_wrappers;$(ProjectDir)src\converters;$(ProjectDir)src\pict_wrappers;$(SourcePath)</SourcePath>
+    <IncludePath>$(ProjectDir)..\PictCore\headers;$(ProjectDir);$(ProjectDir)headers;$(ProjectDir)headers\converters;$(ProjectDir)headers\pict_wrappers;$(ProjectDir)headers\validation;$(IncludePath)</IncludePath>
+    <SourcePath>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)src\converters;$(ProjectDir)src\pict_wrappers;$(ProjectDir)src\validation;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(ProjectDir)..\PictCore\headers;$(ProjectDir);$(ProjectDir)headers;$(ProjectDir)headers\cli_wrappers;$(ProjectDir)headers\cli_wrappers\generics;$(ProjectDir)headers\converters;$(ProjectDir)headers\pict_wrappers;$(IncludePath)</IncludePath>
-    <SourcePath>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)src\cli_wrappers;$(ProjectDir)src\converters;$(ProjectDir)src\pict_wrappers;$(SourcePath)</SourcePath>
+    <IncludePath>$(ProjectDir)..\PictCore\headers;$(ProjectDir);$(ProjectDir)headers;$(ProjectDir)headers\converters;$(ProjectDir)headers\pict_wrappers;$(ProjectDir)headers\validation;$(IncludePath)</IncludePath>
+    <SourcePath>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)src\converters;$(ProjectDir)src\pict_wrappers;$(ProjectDir)src\validation;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(ProjectDir)..\PictCore\headers;$(ProjectDir);$(ProjectDir)headers;$(ProjectDir)headers\cli_wrappers;$(ProjectDir)headers\cli_wrappers\generics;$(ProjectDir)headers\converters;$(ProjectDir)headers\pict_wrappers;$(IncludePath)</IncludePath>
-    <SourcePath>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)src\cli_wrappers;$(ProjectDir)src\converters;$(ProjectDir)src\pict_wrappers;$(SourcePath)</SourcePath>
+    <IncludePath>$(ProjectDir)..\PictCore\headers;$(ProjectDir);$(ProjectDir)headers;$(ProjectDir)headers\converters;$(ProjectDir)headers\pict_wrappers;$(ProjectDir)headers\validation;$(IncludePath)</IncludePath>
+    <SourcePath>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)src\converters;$(ProjectDir)src\pict_wrappers;$(ProjectDir)src\validation;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -284,11 +284,8 @@
     <ClCompile Include="src\pict_wrappers\PictCreateModelWrapper.cpp" />
     <ClCompile Include="src\pict_wrappers\PictCreateTaskWrapper.cpp" />
     <ClCompile Include="src\pict_wrappers\PictGenerate.cpp" />
-
     <ClCompile Include="src\pict_wrappers\PictSetRootModel.cpp" />
-
-    <ClCompile Include="src\pict_wrappers\PictValidation.cpp" />
-
+    <ClCompile Include="src\validation\PictValidation.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="headers\converters\PictConverters.h" />
@@ -297,7 +294,7 @@
     <ClInclude Include="headers\pict_wrappers\PictCreateTaskWrapper.h" />
     <ClInclude Include="headers\pict_wrappers\PictGenerate.h" />
     <ClInclude Include="headers\pict_wrappers\PictSetRootModel.h" />
-    <ClInclude Include="headers\pict_wrappers\PictValidation.h" />
+    <ClInclude Include="headers\validation\PictValidation.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

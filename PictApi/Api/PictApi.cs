@@ -29,7 +29,7 @@ public class PictApi : IPictApi
     public IntPtr CreateModel(uint? seed = null)
     {
         unsafe
-        {   
+        {
             return new IntPtr(pict_create_model_wrapper.call(seed));
         }
     }

@@ -13,4 +13,3 @@ namespace pict_wrapper
         );
     }
 }
-    
