@@ -14,17 +14,4 @@ namespace converters {
         
         return value->ToPointer();
     }
-
-    unsigned int* pict_converters::cli_array_to_unsigned_int_array(array<unsigned int>^ value)
-    {
-        if(value == nullptr)
-        {
-            return nullptr;
-        }
-        
-        const pin_ptr<unsigned int> pinned_values = &value[0];
-        unsigned int* native_pointer_to_values = pinned_values;
-
-        return native_pointer_to_values;
-    }
 }
