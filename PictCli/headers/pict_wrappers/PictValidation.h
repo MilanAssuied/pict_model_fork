@@ -1,5 +1,6 @@
 ﻿#pragma once
-#include "../../../PictCore/api/pictapi.h"
+
+#include "core_api.h"
 
 namespace pict_wrapper
 {

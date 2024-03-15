@@ -3,7 +3,9 @@
 
 namespace pict_wrapper
 {
-    pict_create_model_wrapper::pict_create_model_wrapper() : managed_method(PictCreateModel)
+    PICT_HANDLE pict_create_model_wrapper::call(Nullable<unsigned> seed)
     {
+        if (!seed.HasValue) { seed = PICT_DEFAULT_RANDOM_SEED; }
+        return PictCreateModel(seed.Value);
     }
 }

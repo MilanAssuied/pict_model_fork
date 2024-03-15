@@ -19,10 +19,10 @@ namespace Sandbox
             
             /* Set model parameters */
             uint[] weights = {1, 2, 1, 1};
-            var p1 = pictApi.AddParameter( model, 4, null );
+            var p1 = pictApi.AddParameter( model, 4, weights );
             CheckNull(p1, "p1");
             
-            var p2 = pictApi.AddParameter( model, 3, weights );
+            var p2 = pictApi.AddParameter( model, 3, 5 );
             CheckNull(p2, "p2");
             
             var p3 = pictApi.AddParameter( model, 5);

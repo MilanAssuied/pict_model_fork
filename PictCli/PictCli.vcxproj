@@ -281,7 +281,6 @@
       <CompileAsManaged>NetCore</CompileAsManaged>
       <LinkCompiled>true</LinkCompiled>
     </ClCompile>
-    <ClCompile Include="src\pict_wrappers\PictConstants.cpp" />
     <ClCompile Include="src\pict_wrappers\PictCreateModelWrapper.cpp" />
     <ClCompile Include="src\pict_wrappers\PictCreateTaskWrapper.cpp" />
     <ClCompile Include="src\pict_wrappers\PictGenerate.cpp" />
@@ -292,11 +291,8 @@
 
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="headers\cli_wrappers\generics\ManagedMethod.h" />
-    <ClInclude Include="headers\cli_wrappers\generics\ManagedVoidMethod.h" />
     <ClInclude Include="headers\converters\PictConverters.h" />
     <ClInclude Include="headers\pict_wrappers\PictAddParameter.h" />
-    <ClInclude Include="headers\pict_wrappers\PictConstants.h" />
     <ClInclude Include="headers\pict_wrappers\PictCreateModelWrapper.h" />
     <ClInclude Include="headers\pict_wrappers\PictCreateTaskWrapper.h" />
     <ClInclude Include="headers\pict_wrappers\PictGenerate.h" />
