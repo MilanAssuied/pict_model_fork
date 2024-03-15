@@ -23,6 +23,8 @@ namespace converters {
         }
         
         const pin_ptr<unsigned int> pinned_values = &value[0];
-        return pinned_values;
+        unsigned int* native_pointer_to_values = pinned_values;
+
+        return native_pointer_to_values;
     }
 }

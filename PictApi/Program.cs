@@ -22,17 +22,17 @@ namespace Sandbox
             var p1 = pictApi.AddParameter( model, 4, weights );
             CheckNull(p1, "p1");
             
-            var p2 = pictApi.AddParameter( model, 3, 5 );
+            /*var p2 = pictApi.AddParameter( model, 3, 5 );
             CheckNull(p2, "p2");
-            
+
             var p3 = pictApi.AddParameter( model, 5);
             CheckNull(p3, "p3");
-            
+
             var p4 = pictApi.AddParameter( model, 2 );
             CheckNull(p4, "p4");
-            
+
             var p5 = pictApi.AddParameter( model, 4 );
-            CheckNull(p5, "p5");
+            CheckNull(p5, "p5");*/
             
             var returnCode = pictApi.Generate(task);
             Console.WriteLine($"Return code has value: {returnCode}");
