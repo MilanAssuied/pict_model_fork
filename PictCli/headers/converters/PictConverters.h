@@ -1,5 +1,6 @@
 ﻿#pragma once
 
+#include <vector>
 #include "core_api.h"
 
 
@@ -8,10 +9,21 @@ namespace converters
     class pict_converters
     {
     public:
-        static PICT_HANDLE int_ptr_to_pict_handle(System::IntPtr^ value);
+        static PICT_HANDLE int_ptr_to_pict_handle(System::IntPtr^);
 
         template<typename T>
-        static T* cli_array_to_unmanaged_array(array<T>^ value);
+        static T* cli_array_to_unmanaged_array(array<T>^);
+
+        ~pict_converters()
+        {
+            for (const auto& array : arrays)
+            {
+                delete[] array;
+            }
+        }
+
+    private:
+        static std::vector<void*> arrays;
     };
 
     template<typename T>
@@ -22,9 +34,11 @@ namespace converters
             return nullptr;
         }
 
+        T* native_array = new T[value->Length];
         const pin_ptr<T> pinned_values = &value[0];
-        T* native_pointer_to_values = pinned_values;
+        memcpy(native_array, pinned_values, value->Length * sizeof(T));
 
-        return native_pointer_to_values;
+        arrays.push_back(native_array);
+        return native_array;
     }
 }
