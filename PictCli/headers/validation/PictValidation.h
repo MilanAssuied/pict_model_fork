@@ -7,10 +7,11 @@ namespace validation
     public class pict_validation
     {
     public:
-        static void check_ret_code(PICT_RET_CODE ret_code);
-
+        static void check_ret_code(PICT_RET_CODE);
+        static void check_null(void*);
+        
         template<typename T>
-        static T impose_default_value_to_optional_parameter(System::Nullable<T> value, T default_value);
+        static T impose_default_value_to_optional_parameter(System::Nullable<T>, T);
     };
 
     template<typename T>

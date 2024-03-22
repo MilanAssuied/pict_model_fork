@@ -1,7 +1,5 @@
 ﻿#pragma once
 
-#include "core_api.h"
-
 
 namespace pict_wrapper
 {

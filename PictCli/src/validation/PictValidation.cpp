@@ -17,3 +17,11 @@ void validation::pict_validation::check_ret_code(const PICT_RET_CODE ret_code)
             assert(! L"Unexpected error code");
     }
 }
+
+void validation::pict_validation::check_null(void* ptr)
+{
+    if(!ptr)
+    {
+        std::wcout << L"Error: Out of memory" << std::endl;
+    }
+}
