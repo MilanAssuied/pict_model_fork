@@ -9,5 +9,6 @@ namespace pict_wrapper
     {
     public:
         static PICT_RET_CODE call(System::IntPtr^ task);
+        static PICT_RET_CODE generate(PICT_HANDLE task_handle);
     };
 }

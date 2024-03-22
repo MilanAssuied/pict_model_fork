@@ -39,6 +39,11 @@ public class PictApi : IPictApi
         pict_set_root_model_wrapper.call(task, model);
     }
 
+    public void DisplayResults(IntPtr task)
+    {
+        pict_display_results.call(task);
+    }
+
     public uint Generate(IntPtr task)
     {
         return pict_generate.call(task);

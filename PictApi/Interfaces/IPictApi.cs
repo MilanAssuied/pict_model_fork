@@ -10,4 +10,6 @@ public interface IPictApi
 
     uint Generate(IntPtr task);
     void SetModel(IntPtr task, IntPtr model);
+
+    void DisplayResults(IntPtr task);
 }
