@@ -1,5 +1,6 @@
 ﻿using pict_wrapper;
 using Sandbox.Interfaces;
+using Sandbox.Tools;
 
 namespace Sandbox.Api;
 
@@ -22,7 +23,7 @@ public class PictApi : IPictApi
     {
         unsafe
         {
-            return new IntPtr(pict_add_parameter.call(model, valueCount, order, valueWeights));
+            return new IntPtr(pict_add_parameter.call(model, ArchitectureTools.UIntPtrToUint(valueCount), order, valueWeights));
         }
     }
 
