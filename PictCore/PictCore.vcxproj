@@ -190,7 +190,12 @@
     <ClCompile Include="api\combination.cpp" />
     <ClCompile Include="api\deriver.cpp" />
     <ClCompile Include="api\exclusion.cpp" />
-    <ClCompile Include="api\model.cpp" />
+    <ClCompile Include="api\model.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
     <ClCompile Include="api\parameter.cpp" />
     <ClCompile Include="api\pictapi.cpp" />
     <ClCompile Include="api\task.cpp" />
@@ -203,7 +208,12 @@
     <ClCompile Include="cli\gcd.cpp" />
     <ClCompile Include="cli\gcdexcl.cpp" />
     <ClCompile Include="cli\gcdmodel.cpp" />
-    <ClCompile Include="cli\model.cpp" />
+    <ClCompile Include="cli\model.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
     <ClCompile Include="cli\mparser.cpp" />
     <ClCompile Include="cli\pict.cpp" />
     <ClCompile Include="cli\strings.cpp" />
