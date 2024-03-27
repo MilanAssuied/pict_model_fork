@@ -172,6 +172,18 @@
     <ClInclude Include="api\pictapi.h" />
     <ClInclude Include="api\resource.h" />
     <ClInclude Include="api\trie.h" />
+    <ClInclude Include="cli\ccommon.h" />
+    <ClInclude Include="cli\cmdline.h" />
+    <ClInclude Include="cli\common.h" />
+    <ClInclude Include="cli\cparser.h" />
+    <ClInclude Include="cli\ctokenizer.h" />
+    <ClInclude Include="cli\gcd.h" />
+    <ClInclude Include="cli\gcdexcl.h" />
+    <ClInclude Include="cli\gcdmodel.h" />
+    <ClInclude Include="cli\model.h" />
+    <ClInclude Include="cli\resource.h" />
+    <ClInclude Include="cli\strings.h" />
+    <ClInclude Include="cli\ver.h" />
     <ClInclude Include="headers\core_api.h" />
   </ItemGroup>
   <ItemGroup>
@@ -183,6 +195,18 @@
     <ClCompile Include="api\pictapi.cpp" />
     <ClCompile Include="api\task.cpp" />
     <ClCompile Include="api\worklist.cpp" />
+    <ClCompile Include="cli\ccommon.cpp" />
+    <ClCompile Include="cli\cmdline.cpp" />
+    <ClCompile Include="cli\common.cpp" />
+    <ClCompile Include="cli\cparser.cpp" />
+    <ClCompile Include="cli\ctokenizer.cpp" />
+    <ClCompile Include="cli\gcd.cpp" />
+    <ClCompile Include="cli\gcdexcl.cpp" />
+    <ClCompile Include="cli\gcdmodel.cpp" />
+    <ClCompile Include="cli\model.cpp" />
+    <ClCompile Include="cli\mparser.cpp" />
+    <ClCompile Include="cli\pict.cpp" />
+    <ClCompile Include="cli\strings.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="api\CMakeLists.txt" />
@@ -190,6 +214,10 @@
     <Content Include="api\pict.rc" />
     <Content Include="api\pictapi.vcxproj" />
     <Content Include="api\pictapi.vcxproj.filters" />
+    <Content Include="cli\CMakeLists.txt" />
+    <Content Include="cli\pictcli.vcxproj" />
+    <Content Include="cli\pictcli.vcxproj.filters" />
+    <Content Include="cli\Resource.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
