@@ -25,11 +25,14 @@
     <Filter Include="Source Files\api">
       <UniqueIdentifier>{d3d7cd63-a181-4d77-aafd-bd490bec4b9d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\cli">
+      <UniqueIdentifier>{f5e59eb8-398e-4fbb-8173-ed6227bbe88e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\cli">
+      <UniqueIdentifier>{a50188b0-1125-4b0a-bccd-7f474f6b1927}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="headers\Entity.h">
-      <Filter>Header Files\core</Filter>
-    </ClInclude>
     <ClInclude Include="api\deriver.h">
       <Filter>Header Files\api</Filter>
     </ClInclude>
@@ -48,11 +51,44 @@
     <ClInclude Include="headers\core_api.h">
       <Filter>Header Files\core</Filter>
     </ClInclude>
+    <ClInclude Include="cli\ver.h">
+      <Filter>Header Files\cli</Filter>
+    </ClInclude>
+    <ClInclude Include="cli\ccommon.h">
+      <Filter>Header Files\cli</Filter>
+    </ClInclude>
+    <ClInclude Include="cli\cmdline.h">
+      <Filter>Header Files\cli</Filter>
+    </ClInclude>
+    <ClInclude Include="cli\common.h">
+      <Filter>Header Files\cli</Filter>
+    </ClInclude>
+    <ClInclude Include="cli\cparser.h">
+      <Filter>Header Files\cli</Filter>
+    </ClInclude>
+    <ClInclude Include="cli\ctokenizer.h">
+      <Filter>Header Files\cli</Filter>
+    </ClInclude>
+    <ClInclude Include="cli\gcd.h">
+      <Filter>Header Files\cli</Filter>
+    </ClInclude>
+    <ClInclude Include="cli\gcdexcl.h">
+      <Filter>Header Files\cli</Filter>
+    </ClInclude>
+    <ClInclude Include="cli\gcdmodel.h">
+      <Filter>Header Files\cli</Filter>
+    </ClInclude>
+    <ClInclude Include="cli\model.h">
+      <Filter>Header Files\cli</Filter>
+    </ClInclude>
+    <ClInclude Include="cli\resource.h">
+      <Filter>Header Files\cli</Filter>
+    </ClInclude>
+    <ClInclude Include="cli\strings.h">
+      <Filter>Header Files\cli</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Entity.cpp">
-      <Filter>Source Files\core</Filter>
-    </ClCompile>
     <ClCompile Include="api\combination.cpp">
       <Filter>Source Files\api</Filter>
     </ClCompile>
@@ -76,6 +112,42 @@
     </ClCompile>
     <ClCompile Include="api\worklist.cpp">
       <Filter>Source Files\api</Filter>
+    </ClCompile>
+    <ClCompile Include="cli\ccommon.cpp">
+      <Filter>Source Files\cli</Filter>
+    </ClCompile>
+    <ClCompile Include="cli\cmdline.cpp">
+      <Filter>Source Files\cli</Filter>
+    </ClCompile>
+    <ClCompile Include="cli\common.cpp">
+      <Filter>Source Files\cli</Filter>
+    </ClCompile>
+    <ClCompile Include="cli\cparser.cpp">
+      <Filter>Source Files\cli</Filter>
+    </ClCompile>
+    <ClCompile Include="cli\ctokenizer.cpp">
+      <Filter>Source Files\cli</Filter>
+    </ClCompile>
+    <ClCompile Include="cli\gcd.cpp">
+      <Filter>Source Files\cli</Filter>
+    </ClCompile>
+    <ClCompile Include="cli\gcdexcl.cpp">
+      <Filter>Source Files\cli</Filter>
+    </ClCompile>
+    <ClCompile Include="cli\gcdmodel.cpp">
+      <Filter>Source Files\cli</Filter>
+    </ClCompile>
+    <ClCompile Include="cli\model.cpp">
+      <Filter>Source Files\cli</Filter>
+    </ClCompile>
+    <ClCompile Include="cli\mparser.cpp">
+      <Filter>Source Files\cli</Filter>
+    </ClCompile>
+    <ClCompile Include="cli\pict.cpp">
+      <Filter>Source Files\cli</Filter>
+    </ClCompile>
+    <ClCompile Include="cli\strings.cpp">
+      <Filter>Source Files\cli</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
